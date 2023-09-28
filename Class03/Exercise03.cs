@@ -23,6 +23,7 @@ class Excercise03
     {
       Console.WriteLine("No se ingresó un número válido.");
     }
+    
   }
   // Comprueba qué numero es mayor y muestra el mensaje
   public static void ValidateNumAndShowMessage(int selectedNum1, int selectedNum2)
