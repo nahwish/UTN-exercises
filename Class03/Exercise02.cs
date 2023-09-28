@@ -38,6 +38,6 @@ class Excercise02
     }
     Console.WriteLine($"{selectedNum} {message}");
   }
-  //En c#, como puedo hacer para verificar si un numero es par o impar?
+
 
 }
