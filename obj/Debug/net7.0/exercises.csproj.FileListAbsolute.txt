@@ -1,0 +1,15 @@
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\exercises.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\exercises.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\exercises.AssemblyInfoInputs.cache
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\exercises.AssemblyInfo.cs
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\exercises.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Escritorio\exercises\bin\Debug\net7.0\exercises.exe
+C:\Users\Usuario\OneDrive\Escritorio\exercises\bin\Debug\net7.0\exercises.deps.json
+C:\Users\Usuario\OneDrive\Escritorio\exercises\bin\Debug\net7.0\exercises.runtimeconfig.json
+C:\Users\Usuario\OneDrive\Escritorio\exercises\bin\Debug\net7.0\exercises.dll
+C:\Users\Usuario\OneDrive\Escritorio\exercises\bin\Debug\net7.0\exercises.pdb
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\exercises.dll
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\refint\exercises.dll
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\exercises.pdb
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\exercises.genruntimeconfig.cache
+C:\Users\Usuario\OneDrive\Escritorio\exercises\obj\Debug\net7.0\ref\exercises.dll
