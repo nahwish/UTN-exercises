@@ -33,6 +33,7 @@ class Excercise04
         }
     }
 
+//Devuelve una lista de enteros escrita por el usuario
     public static List<int> SelectNumbers()
     {
         Console.WriteLine("Escribe 5 números separados por coma:");
@@ -41,11 +42,17 @@ class Excercise04
 
         string[] numberStrings = input.Split(',');
 
+
         // Creamos una lista para almacenar los números
         List<int> numbers = new List<int>();
-
         // Iteramos a través de las cadenas obtenidas
-        foreach (string numberString in numberStrings)
+        AddNumber(numberStrings,numbers);
+        return numbers;
+    }
+// Recibe un array de numeros separados por coma y un array vacio para guardar los numeros
+    public static void AddNumber(string[] numberStrings,List<int> numbers)
+    {
+      foreach (string numberString in numberStrings)
         {
             // Intentamos convertir cada cadena en un número entero
             if (int.TryParse(numberString, out int number))
@@ -57,6 +64,5 @@ class Excercise04
                 Console.WriteLine($"'{numberString}' no es un número válido y se ignorará.");
             }
         }
-        return numbers;
     }
 }
