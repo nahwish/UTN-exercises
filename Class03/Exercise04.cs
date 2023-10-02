@@ -52,7 +52,7 @@ class Excercise04
 // Recibe un array de numeros separados por coma y un array vacio para guardar los numeros
     public static void AddNumber(string[] numberStrings,List<int> numbers)
     {
-      foreach (string numberString in numberStrings)
+        foreach (string numberString in numberStrings)
         {
             // Intentamos convertir cada cadena en un número entero
             if (int.TryParse(numberString, out int number))
