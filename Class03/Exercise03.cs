@@ -37,8 +37,10 @@ class Excercise03
     else
     {
       message = $"{selectedNum1} es mayor a {selectedNum2}";
+      // Console.WriteLine(selectedNum1 + "es mayor a" + selectedNum2);
     }
     Console.WriteLine($"{message}");
+    
   }
 
 // Pide al usuario dos numeros, verifica que sean de tipo int y los guarda

@@ -7,7 +7,12 @@ Escribe un programa que pida al usuario 5 números
 y muestre en pantalla el mayor de ellos, el menor y el promedio.
 
 */
-
+string[] inventario = new string[5];
+            inventario[0] = "Botiquin";
+            inventario[1] = "Tornillo";
+            inventario[2] = "Chicle";
+            inventario[3] = "Telefono";
+            inventario[4] = "Botella";
 class Excercise04
 {
     public static void MayorMenorYPromedio()
@@ -39,6 +44,7 @@ class Excercise04
         Console.WriteLine("Escribe 5 números separados por coma:");
 
         string input = Console.ReadLine();
+        // "3,4,5,65,"
 
         string[] numberStrings = input.Split(',');
 
