@@ -14,103 +14,112 @@ Utilice su imaginación y los conceptos vistos hasta ahora (Tipos de datos, cond
 */
 class Integrador01
 {
-    public static void QuestionGame()
+  public static bool gameOver = false;
+  public static string state = "inicio";
+  public static void QuestionGame()
+  {
+    Console.WriteLine("¡Bienvenido!");
+
+    // bool gameOver = false;
+
+    while (!gameOver)
     {
-      Console.WriteLine("¡Bienvenido!");
-      bool gameOver = false;
-      while(!gameOver)
+      switch (state)
       {
-       GameOption("inicio");
-
-      }
-
-    }
-
-    static void GameOption(string zona){
-      switch (zona)
-       {
         case "inicio":
-        StartGame();
-        break;
-        default:
-        Console.WriteLine("terminar");
-        break;
-       }
-    }
-      static void StartGame ()
-      {
-        string[] temas = {
-        "1.Pokemon",
-        "2.Programación",
-        "3.Cocina",
-        "4.Peliculas",
-        "5.Musica",
-    };
-        Console.WriteLine("Seleccioná un tema");
-        for(int i=0;i<temas.Length;i++)
-        {
-          Console.WriteLine(temas[i]);
-        }
-        string opcionResp = Console.ReadLine();
-        Theme(opcionResp);
-      }
-
-      static void Theme(string option)
-      {
-        string[] preguntasPokemon = {
-
-        }
-         string[] preguntasProgramacion = {
-          
-        }
-         string[] preguntasCocina = {
-          
-        }
-         string[] preguntasPeliculas = {
-          
-        }
-      
-        switch (option)
-        {
-          case "":
-
-          break;
-          default:
-          {};
-          break;
-        }
-      }
-       static void Instruction()
-      {
-        Console.WriteLine("elegiste la opcion 2");
-      }
-      static void Exit()
-      {
-        Console.WriteLine("salir");
-      }
-
-      static void Init()
-      {
-         Console.WriteLine("1. Jugar");
-        Console.WriteLine("2. ¿Cómo se juega?");
-        Console.WriteLine("3. salir");
-
-        string option = Console.ReadLine();
-
-        switch (option)
-        {
-          case "1":
           StartGame();
           break;
-          case "2":
-          Instruction();
-          break;
-          case "3":
+        case "Select":
+        
+        break;
+        case "Salir":
           Exit();
           break;
-          default:
-          Console.WriteLine("Opción no valida");
+        default:
           break;
-        }
       }
+
+    }
+
+
+  }
+
+
+
+    
+
+  
+  static void StartGame()
+  {
+    string[] temas = {
+        "1.Pokedex",
+        "2.Como usarlo",
+        "3.Salir",
+
+    };
+    Console.WriteLine("Seleccioná una opción");
+    for (int i = 0; i < temas.Length; i++)
+    {
+      Console.WriteLine(temas[i]);
+    }
+    string opcionResp = Console.ReadLine();
+    Option(opcionResp);
+  }
+
+  static void Option(string option)
+  {
+
+
+    switch (option)
+    {
+      case "1":
+        Pokedex();
+        break;
+      case "3":
+        Exit();
+        break;
+      default:
+        { };
+        break;
+    }
+  }
+  static void Pokedex()
+  {
+    for (int i = 0; i < 151; i++)
+    {
+      Console.WriteLine($"{i + 1}. {PokeName.pokename[i]}");
+    }
+
+  }
+  static void Exit()
+  {
+    Console.WriteLine("Hasta la proxima!");
+    gameOver = true;
+  }
+
+  static void Init()
+  {
+    Console.WriteLine("1. Jugar");
+    Console.WriteLine("2. ¿Cómo se juega?");
+    Console.WriteLine("3. salir");
+
+    string option = Console.ReadLine();
+
+    switch (option)
+    {
+      case "1":
+        StartGame();
+        break;
+      case "2":
+        Pokedex();
+        break;
+      case "3":
+        Exit();
+        break;
+      default:
+        Console.WriteLine("Opción no valida");
+        break;
+    }
+  }
+
 }
